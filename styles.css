@@ -57,7 +57,7 @@ main{
     margin-left: auto;
     border: 2px solid white;
 }
-.home h2{
+.home h1{
     color: white;  
     background-color: black;
     border: 3px solid white; 
@@ -102,7 +102,7 @@ footer>div{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.showing h2{
+.showing h1{
     grid-area: 1/1/2/2;
     color: white;  
     background-color: black;
@@ -144,7 +144,7 @@ footer>div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.about>section>div>h2{
+.about>section>div>h1{
     grid-area: 1/1/2/2; 
     text-align: center; 
     margin-right: 1rem;
@@ -157,14 +157,170 @@ footer>div{
     border: 3px solid black;
     border-radius: 15px;
 }
-h2{
+h1{
     color: white;
     background-color: black;
     border: 3px solid white; 
     border-radius: 10px;
+    text-align: center;
+    padding: .5rem;
 }
 .about>p{
     color: white;
     font-family: 'Balthazar';
     font-size: 25px;
+    margin: 2rem;
+}
+.store>section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.store>.image-left>img{
+    grid-area: 1/1/2/2;
+    max-width: 90%;
+}
+.store>.image-left>div>h2{
+    grid-area: 1/2/2/3;
+    color: white;
+    font-family: 'Balthazar';
+    font-size: 30px;
+    padding-top: 3rem;
+}
+.store>.image-right>img{
+    grid-area: 1/2/2/3;
+    max-width: 90%;
+}
+.store>.image-right>div>h2{
+    grid-area: 1/1/2/2;
+    color: white;
+    font-family: 'Balthazar';
+    font-size: 30px;
+    padding-top: 3rem;
+}
+.contact>section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact>section>div>h1{
+    grid-area: 1/1/2/2;
+    margin-top: 5rem;
+    font-family: 'Balthazar';
+    align-items: center;
+}
+.phone>img, .email>img, .address>img{
+    max-width: 30%;
+    margin-top: 3rem;
+    margin-left: 40%;
+}
+.phone>a, .email>a, .address>div{
+    color: white;
+    text-decoration: none;
+    font-family: 'Balthazar';
+    padding-top: 3rem;
+    font-size: 25px;
+}
+.social{
+    margin-left: 70%;
+}
+.home>h1{
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+@media (min-width:700px){
+    .store>.image-right>div>h2{
+        padding-top: 5rem;
+    }
+    .store>.image-left>div>h2{
+        padding-top: 6rem;
+    }
+}
+@media (min-width:1000px){
+    header>nav>a{
+        font-size: larger;
+    }
+    .home>h1{
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+    .home>p{
+        font-size: larger;
+    }
+    .now-showing>p{
+        font-size: larger;
+    }
+    .movies>section>div{
+        font-size: 25px;
+        padding-top: 2rem;
+    }
+    .now-showing>.showing>form>label{
+        font-size: 25px;
+    }
+    .store>.image-right>div>h2{
+        padding-top: 8rem;
+        margin-left: 50%;
+    }
+    .store>.image-left>div>h2{
+        padding-top: 9rem;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .about>section>img{
+        max-width: 50%;
+        margin-left: 10rem;
+    }
+    .about>section>div>h1{
+        margin-left: 4rem;
+    }
+    .store>h1{
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+}
+@media (min-width:1300px){
+    .now-showing>.movies>section>img{
+        max-width: 50%;
+        margin-left: 30%;
+    }
+    .home>h1{
+        margin-left: 30rem;
+        margin-right: 30rem;
+    }
+    .now-showing>.movies>section>div{
+        margin-right: 5rem;
+    }
+    .about>section>div{
+        margin-top: 6rem;
+    }
+    .store>h1{
+        margin-left: 30rem;
+        margin-right: 30rem;
+    }
+    .store>.image-right>div>h2{
+        font-size: 5rem;
+    }
+    .store>.image-left>div>h2{
+        font-size: 5rem;
+    }
+    .contact>section>div>h1{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .contact>section>div>h1{
+        grid-area: 1/2/5/3;
+    }
+    .phone{
+        grid-area: 2/1/3/2;
+    }
+    .email{
+        grid-area: 3/1/4/2;
+    }
+    .address{
+        grid-area: 4/1/5/2;
+    }
 }
