@@ -40,7 +40,6 @@ div.scroll-container{
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
-    margin-top: 4rem;
     margin-bottom: 4rem;
 }
 div.scroll-container img{
@@ -93,4 +92,79 @@ footer>div>a>img{
 }
 footer>div{
     margin-top: 2rem;
+}
+.home>p{
+    margin-top: 3rem;
+    color: white;
+    font-family: 'Balthazar';
+}
+.showing{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.showing h2{
+    grid-area: 1/1/2/2;
+    color: white;  
+    background-color: black;
+    border: 3px solid white; 
+    border-radius: 10px; 
+    padding: 10px;
+    margin: 1rem 2rem 0rem 0rem;
+    font-family: 'Balthazar';  
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 50%;
+}
+.showing form{
+    grid-area: 1/2/2/3;
+    margin-top: 1.5rem;
+    color: white;
+    font-family: 'Balthazar';
+}
+.now-showing>p{
+    margin-top: 3rem;
+    color: white;
+    font-family: 'Balthazar';
+}
+.movies>section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.movies>section>img{
+    grid-area: 1/1/2/2;
+    max-width: 80%;
+    border: 2px solid white;
+}
+.movies>section>div{
+    grid-area: 1/2/2/3;
+    color: white;
+    font-family: 'Balthazar';
+}
+.about>section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.about>section>div>h2{
+    grid-area: 1/1/2/2; 
+    text-align: center; 
+    margin-right: 1rem;
+    margin-top: 5rem;
+}
+.about>section>img{
+    grid-area: 1/2/2/4;
+    max-width: 80%;
+    margin-left: 1rem;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+h2{
+    color: white;
+    background-color: black;
+    border: 3px solid white; 
+    border-radius: 10px;
+}
+.about>p{
+    color: white;
+    font-family: 'Balthazar';
+    font-size: 25px;
 }
